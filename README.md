@@ -1,6 +1,5 @@
 # Sparta Node Sample App
 
-
 ## Instructions
 Add to the README.md instructions that explain the steps the developer will need to go through to use this environment i.e they'll need to install vagrant and virtual box, install all the plugins and know where to put their app code.
 
@@ -12,6 +11,13 @@ vagrant ssh
 vagrant plugin install vagrant-hostsupdater
 vagrant ssh
 in vagrant@ubuntu-xenial : sudo apt-get install nginx
+
+## Bonus
+The goal is that the developers should be able to simply clone your repo and run "vagrant up". Can you automate the installation of the required vagrant plugins?
+<!-- required_plugins = %w( vagrant-hostmanager vagrant-someotherplugin )
+  required_plugins.each do |plugin|
+  system "vagrant plugin install #{plugin}" unless Vagrant.has_plugin? plugin
+end -->
 
 ## Description
 
