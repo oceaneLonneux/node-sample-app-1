@@ -1,8 +1,21 @@
 # Sparta Node Sample App
 
+
+## Instructions
+Add to the README.md instructions that explain the steps the developer will need to go through to use this environment i.e they'll need to install vagrant and virtual box, install all the plugins and know where to put their app code.
+
+vagrant init
+vagrant init ubuntu/xenial64
+atom .
+vagrant up
+vagrant ssh
+vagrant plugin install vagrant-hostsupdater
+vagrant ssh
+in vagrant@ubuntu-xenial : sudo apt-get install nginx
+
 ## Description
 
-This app is intended for use with the Sparta Global Devops Stream as a sample app. You can clone the repo and use it as is but no changes will be accepted on this branch. 
+This app is intended for use with the Sparta Global Devops Stream as a sample app. You can clone the repo and use it as is but no changes will be accepted on this branch.
 
 To use the repo within your course you should fork it.
 
@@ -57,7 +70,3 @@ npm test
 ```
 
 The test for posts will fail ( as expected ) if the database has not been correctly setup.
-
-
-
-
