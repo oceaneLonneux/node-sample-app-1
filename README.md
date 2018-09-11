@@ -10,23 +10,23 @@ If so, go to privacy in Settings, then accept the Oracle part.
 ### Vagrant
 You have to download Vagrant first. It won't appear in the Applications folder afterards.
 To install vagrant :
-'vagrant init ubuntu/xenial64'
+''vagrant init ubuntu/xenial64''
 go into the hosts file to know your IP.
-'cat /etc/hosts'
-'atom .'
+''cat /etc/hosts''
+''atom .''
 In atom, go into the Vagrantfile and enter:
-'Vagrant.configure("2") do |config|
+''Vagrant.configure("2") do |config|
 
   config.vm.box = "ubuntu/xenial64"
   config.vm.network("private_network", ip: "192.168.10.100")
   config.hostsupdater.aliases = ["development.local"]
-end'
+end''
 Go back to your terminal after saving.
 Launch vagrant.
-'vagrant up'
-'vagrant plugin install vagrant-hostsupdater'
-'vagrant ssh'
-in vagrant@ubuntu-xenial : 'sudo apt-get install nginx'
+''vagrant up''
+''vagrant plugin install vagrant-hostsupdater'
+''vagrant ssh'
+in vagrant@ubuntu-xenial : ''sudo apt-get install nginx''
 
 ## Bonus
 The goal is that the developers should be able to simply clone your repo and run "vagrant up". Can you automate the installation of the required vagrant plugins?
