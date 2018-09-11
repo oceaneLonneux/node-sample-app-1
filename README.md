@@ -30,10 +30,10 @@ in vagrant@ubuntu-xenial : `'sudo apt-get install nginx'`
 
 ## Bonus
 The goal is that the developers should be able to simply clone your repo and run "vagrant up". Can you automate the installation of the required vagrant plugins?
-<!-- required_plugins = %w( vagrant-hostmanager vagrant-someotherplugin )
+`required_plugins = %w( vagrant-hostmanager vagrant-someotherplugin )
   required_plugins.each do |plugin|
   system "vagrant plugin install #{plugin}" unless Vagrant.has_plugin? plugin
-end -->
+end`
 
 ## Description
 
