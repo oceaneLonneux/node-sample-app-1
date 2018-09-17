@@ -1,6 +1,4 @@
 # Sparta Node Sample App
-
-
 ## Instructions
 Add to the README.md instructions that explain the steps the developer will need to go through to use this environment i.e they'll need to install vagrant and virtual box, install all the plugins and know where to put their app code.
 
